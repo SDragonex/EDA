@@ -34,3 +34,15 @@ form.addEventListener("submit", function(e){
   form.reset();
 });
 }
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("fade-in");
+    }
+  });
+});
+
+document.querySelectorAll(".card").forEach(el => {
+  observer.observe(el);
+});
