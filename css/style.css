@@ -1,0 +1,35 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-link {
+  color: white;
+  transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #facc15;
+}
+
+.card {
+  background: #1f2937;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: #374151;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: #1f2937;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
